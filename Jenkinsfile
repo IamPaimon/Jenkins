@@ -29,7 +29,7 @@ pipeline {
             }
         }
     }
-         Stage ("Build on Kubernetes"){ 
+         Stage ("Build on kubernetes"){ 
             steps {
                 withKubeConfig([credentialsId: "kubeconfig"]) {
                     sh "pwd"
